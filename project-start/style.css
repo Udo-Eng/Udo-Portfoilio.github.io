@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* BEGINING OF GRID STYLING  */
+.container{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(7,min-max(100px,150px));
+}
+
+header{
+    grid-column: 1 / -1;
+    grid-row:  1 / 2;
+    background-color: blue;
+}
+
+.banner{
+     grid-column: 1 / -1;
+     grid-row: 2 / 4;  
+}
+.banner img{
+    width:100%;
+    height:100%;
+}
+
+.projects{
+    grid-column: 1 / -1;
+    grid-row: 4 / 6;
+    background-color:grey;  
+}
+footer{
+    grid-column: 1 / -1;
+     grid-row: 6 / 7;  
+}
+
+
+header nav ul {
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: Start;
+    padding: 0.8em 0 ;
+    
+}
+header nav ul li{
+ padding: 0.3em 1em;
+ cursor:pointer;
+ font-size: 1.2em;
+  
+}
+li a{
+      text-decoration: none;  
+      color:#fff; 
+}
+
+/* Project Flex Box Container */
+.Flex-Container{
+    display:flex;
+    flex-flow: row wrap;
+     grid-column: 1 / -1;
+    grid-row: 4 / 6;
+    background-color:grey;  
+    justify-content: center;
+}
+.Card a {
+    padding: 0.5em;
+    margin: 0.4em;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+      
+    text-decoration: none;
+}
+.Card button {
+    padding: 0.2em 0.8em ;
+    margin:0.4em 0;
+    border:1px solid  transparent;
+    border-radius: 0.4em;
+    background-color: blue;
+  
+}
+
+.Card a img {
+    width: 10em;
+    height: 8em;
+}
+
+
+/* FOOTER STYLING  */
+footer nav  ul{
+    background-color: darkgray;
+    list-style: none;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.8em 0 ;
+    color:#fff;
+}
+footer p{
+    background-color: darkgray;
+    color:#fff;
+    text-align: center;
+    font-size:1.2em;
+}
+
+footer nav  ul li {
+    padding: 0.4em 
+}
