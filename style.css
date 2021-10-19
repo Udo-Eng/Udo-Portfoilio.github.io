@@ -36,6 +36,14 @@ footer{
      grid-row: 6 / 7;  
 }
 
+/* STICKY HEADER */
+.sticky{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+}
 
 header nav ul {
     list-style: none;
@@ -51,6 +59,9 @@ header nav ul li{
  font-size: 1.2em;
   
 }
+.push{
+    margin-left: auto;
+}
 li a{
       text-decoration: none;  
       color:#fff; 
@@ -65,13 +76,22 @@ li a{
     background-color:grey;  
     justify-content: center;
 }
+.Card{
+    background-color: #fff;
+    border:1px solid transparent;
+    border-radius: 0.3em;
+    margin: 0.6em;
+}
+.Card:hover{
+   transform:rotate(-5deg);
+   box-shadow: 0.2em 0.2em 0.2em black;
+}
 .Card a {
     padding: 0.5em;
     margin: 0.4em;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-      
     text-decoration: none;
 }
 .Card button {
@@ -80,6 +100,7 @@ li a{
     border:1px solid  transparent;
     border-radius: 0.4em;
     background-color: blue;
+    cursor:pointer;
   
 }
 
